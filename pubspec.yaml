@@ -1,0 +1,29 @@
+name: sisa_kulkas
+description: "SisaKulkas - Sistem Rekomendasi Resep Makanan Cerdas Berbasis Computer Vision (YOLOv8)"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  provider: ^6.1.2
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+  permission_handler: ^11.3.1
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/recipes.json
+    - assets/data/classes.json
+    - assets/model/best.onnx
